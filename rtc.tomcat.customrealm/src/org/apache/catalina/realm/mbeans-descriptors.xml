@@ -1,0 +1,97 @@
+<?xml version="1.0"?>
+<mbeans-descriptors>
+<mbean         name="CustomJNDIRealm"
+          description="Implementation of Realm that works with a directory
+                       server accessed via the Java Naming and Directory
+                       Interface (JNDI) APIs"
+               domain="Catalina"
+                group="Realm"
+                 type="org.apache.catalina.realm.CustomRTCRealm">
+
+    <attribute   name="className"
+          description="Fully qualified class name of the managed object"
+                 type="java.lang.String"
+            writeable="false"/>
+
+    <attribute   name="connectionName"
+          description="The connection username for the server we will contact"
+                 type="java.lang.String"/>
+
+    <attribute   name="connectionPassword"
+          description="The connection password for the server we will contact"
+                 type="java.lang.String"/>
+
+    <attribute   name="connectionURL"
+          description="The connection URL for the server we will contact"
+                 type="java.lang.String"/>
+
+    <attribute   name="contextFactory"
+          description="The JNDI context factory for this Realm"
+                 type="java.lang.String"/>
+
+    <attribute   name="digest"
+          description="Digest algorithm used in storing passwords in a
+                       non-plaintext format"
+                 type="java.lang.String"/>
+
+    <attribute   name="roleBase"
+          description="The base element for role searches"
+                 type="java.lang.String"/>
+
+    <attribute   name="roleName"
+          description="The name of the attribute containing roles held elsewhere"
+                 type="java.lang.String"/>
+
+    <attribute   name="roleSearch"
+          description="The message format used to select roles for a user"
+                 type="java.lang.String"/>
+
+    <attribute   name="roleSubtree"
+          description="Should we search the entire subtree for matching
+                       memberships?"
+                 type="boolean"/>
+
+    <attribute   name="userBase"
+          description="The base element for user searches"
+                 type="java.lang.String"/>
+
+    <attribute   name="userPassword"
+          description="The attribute name used to retrieve the user password"
+                 type="java.lang.String"/>
+
+    <attribute   name="userPattern"
+          description="The message format used to select a user"
+                 type="java.lang.String"/>
+
+     <attribute   name="userRoleName"
+          description="The name of the attribute in the user's entry containing
+                       roles for that user"
+                 type="java.lang.String"/>
+
+   <attribute   name="userSearch"
+         description="The message format used to search for a user"
+                type="java.lang.String"/>
+
+    <attribute   name="userSubtree"
+          description="Should we search the entire subtree for matching
+                       users?"
+                 type="boolean"/>
+                 
+    <attribute   name="buildUser"
+          description="The name of the build user"
+                 type="java.lang.String"/>
+
+    <attribute   name="buildPassword"
+          description="The pwd of the build user"
+                 type="java.lang.String"/>
+                 
+    <attribute   name="buildRoles"
+          description="The jazz user roles of the build user (commma separated list)"
+                 type="java.lang.String"/>                                  
+                                  
+    <operation name="start" description="Start" impact="ACTION" returnType="void" />
+    <operation name="stop" description="Stop" impact="ACTION" returnType="void" />
+    <operation name="init" description="Init" impact="ACTION" returnType="void" />
+    <operation name="destroy" description="Destroy" impact="ACTION" returnType="void" />
+  </mbean>
+</mbeans-descriptors>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="WINDOWS-1252" standalone="no"?>
+<jardesc>
+    <jar path="c:/temp/ozzy/rtc.tomcat.customrealm.jar"/>
+    <options buildIfNeeded="true" compress="true" descriptionLocation="/rtc.tomcat.customrealm/build-jar.jardesc" exportErrors="true" exportWarnings="true" includeDirectoryEntries="false" overwrite="false" saveDescription="true" storeRefactorings="false" useSourceFolders="false"/>
+    <storedRefactorings deprecationInfo="true" structuralOnly="false"/>
+    <selectedProjects/>
+    <manifest generateManifest="true" manifestLocation="" manifestVersion="1.0" reuseManifest="false" saveManifest="false" usesManifest="true">
+        <sealing sealJar="false">
+            <packagesToSeal/>
+            <packagesToUnSeal/>
+        </sealing>
+    </manifest>
+    <selectedElements exportClassFiles="true" exportJavaFiles="true" exportOutputFolder="false">
+        <file path="/rtc.tomcat.customrealm/.classpath"/>
+        <file path="/rtc.tomcat.customrealm/build-jar.jardesc"/>
+        <javaElement handleIdentifier="=rtc.tomcat.customrealm/src"/>
+        <file path="/rtc.tomcat.customrealm/.project"/>
+    </selectedElements>
+    <fatjar builder="org.eclipse.jdt.ui.plain_jar_builder" launchConfig=""/>
+</jardesc>
